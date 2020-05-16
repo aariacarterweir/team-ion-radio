@@ -5,7 +5,7 @@ FROM alpine:latest
 WORKDIR /app/
 
 # COPY FILES
-COPY app/* ./
+COPY app/ .
 
 # Update / Upgrade apk
 RUN apk update
