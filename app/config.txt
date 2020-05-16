@@ -45,7 +45,7 @@ game = "DEFAULT"
 // If you set this, it will modify the default status of bot
 // Valid values: ONLINE IDLE DND INVISIBLE
 
-status = ONLINE
+status = INVISIBLE
 
 
 // If you set this to true, the bot will list the title of the song it is currently playing in its

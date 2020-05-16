@@ -15,4 +15,4 @@ docker run \
   --env-file .env \
   --name "ion-radio-${VERSION}" \
   aariacarterweir/ion-radio:latest \
-  boot.sh
+  boot.sh -b
