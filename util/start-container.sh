@@ -13,7 +13,6 @@ docker run \
   --tty \
   --env VERSION="$VERSION" \
   --env-file .env \
-  --mount  type=bind,source="$(pwd)"/app,target=/app \
   --name "ion-radio-${VERSION}" \
   aariacarterweir/ion-radio:latest \
   boot.sh

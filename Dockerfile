@@ -4,6 +4,9 @@ FROM alpine:latest
 # Set a working directory
 WORKDIR /app/
 
+# COPY FILES
+COPY app/* ./
+
 # Update / Upgrade apk
 RUN apk update
 

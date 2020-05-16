@@ -1,6 +1,9 @@
 #!/bin/sh
 
-docker container stop ion-radio
-docker system prune --force
+sh util/stop-container.sh -v 1
+sh util/stop-container.sh -v 2
+sh util/stop-container.sh -v 3
+sh util/stop-container.sh -v 4
+sh util/stop-container.sh -v 5
 
-rm -rf app/boot
+docker system prune --force
