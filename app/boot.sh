@@ -1,14 +1,28 @@
 #!/bin/sh
 
-# make boot directory
-mkdir boot
+# Set token
+eval TOKEN=\$BOT_TOKEN_${VERSION}
 
-# START BOTS
-sh ./start-bot.sh -v 1 -t "$BOT_TOKEN_1"
-#sh ./start-bot.sh -v 2 -t "$BOT_TOKEN_2"
-#sh ./start-bot.sh -v 3 -t "$BOT_TOKEN_3"
-#sh ./start-bot.sh -v 4 -t "$BOT_TOKEN_4"
-#sh ./start-bot.sh -v 5 -t "$BOT_TOKEN_5"
+# clean up any previous attempts
+rm -rf runtime/*
+
+# make runtime directory
+mkdir runtime
+
+# copy main config.txt into runtime subfolder
+cp ./config.txt runtime/config.txt
+
+# add bot token
+sed -i "s/\[BOT_TOKEN\]/$TOKEN/" runtime/config.txt
+
+# update owner id
+sed -i "s/\[OWNER_ID\]/$OWNER_ID/" runtime/config.txt
+
+# update prefix
+sed -i "s/\[PREFIX\]/\-${VERSION}/" runtime/config.txt
+
+# runtime the bot!
+cd runtime/ && nohup java -Dnogui=true -jar /app/music-bot.jar &
 
 # keep alive
 trap : TERM INT; sleep infinity & wait
