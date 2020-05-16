@@ -1,0 +1,10 @@
+[03:53:02] [WARN] [Settings]: Failed to load server settings (this is normal if no settings have been set yet): java.nio.file.NoSuchFileException: serversettings.json
+[03:53:02] [INFO] [Startup]: Loaded config from /app/config.txt
+[03:53:03] [INFO] [JDA]: Login Successful!
+[03:53:03] [INFO] [WebSocketClient]: Connected to WebSocket
+[03:53:04] [INFO] [JDA]: Finished Loading!
+[03:53:15] [WARN] [Settings]: Failed to load server settings (this is normal if no settings have been set yet): java.nio.file.NoSuchFileException: serversettings.json
+[03:53:15] [INFO] [Startup]: Loaded config from /app/config.txt
+[03:53:15] [INFO] [JDA]: Login Successful!
+[03:53:16] [INFO] [WebSocketClient]: Connected to WebSocket
+[03:53:16] [INFO] [JDA]: Finished Loading!
