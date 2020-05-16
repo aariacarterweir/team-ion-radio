@@ -33,4 +33,4 @@ if [[ "$PUSH" ]]; then
 fi
 
 # CLEAN UP
-docker system prune --force
+#docker system prune --force

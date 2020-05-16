@@ -5,10 +5,10 @@ FROM alpine:latest
 WORKDIR /app/
 
 # Copy files
-COPY assets/* ./
+#COPY app/* ./
 
 # Mod perms
-RUN chmod +x ./boot.sh
+#RUN chmod +x ./boot.sh
 
 # Update / Upgrade apk
 RUN apk update
