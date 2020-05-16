@@ -21,7 +21,7 @@ sed -i "s/\[OWNER_ID\]/$OWNER_ID/" config.txt
 sed -i "s/\[PREFIX\]/\-${VERSION}/" config.txt
 
 # run the bot!
-if [[ "$BOOT" ]]; then
+if [ "$BOOT" ]; then
   nohup java -Dnogui=true -jar /app/music-bot.jar &
 fi
 

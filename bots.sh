@@ -9,7 +9,7 @@ do
     esac
 done
 
-if [[ ! "$ACTION" ]]; then
+if [ ! "$ACTION" ]; then
   echo "Action must be provided, use the -a flag. Available actions are start, stop, revive, pause, unpause"
   echo "use the -f flag to clean up during a stop operation"
   exit 2
@@ -21,6 +21,6 @@ sh "util/${ACTION}-bot.sh" -v 3
 sh "util/${ACTION}-bot.sh" -v 4
 sh "util/${ACTION}-bot.sh" -v 5
 
-if [[ "$FORCE" ]]; then
+if [ "$FORCE" ]; then
   docker system prune --force
 fi

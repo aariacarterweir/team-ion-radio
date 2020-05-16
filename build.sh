@@ -19,15 +19,15 @@ done
 # DO BUILD
 docker build -t "${IMAGE_NAME}:${LATEST_TAG}" .
 
-if [[ "$VERSION" ]]; then
+if [ "$VERSION" ]; then
     docker tag "${IMAGE_NAME}:${LATEST_TAG}" "${IMAGE_NAME}:${VERSION}"
 fi
 
 # DO PUSH
-if [[ "$PUSH" ]]; then
+if [ "$PUSH" ]; then
     docker push "${IMAGE_NAME}:${LATEST_TAG}"
 
-    if [[ "$VERSION" ]]; then
+    if [ "$VERSION" ]; then
         docker push "${IMAGE_NAME}:${VERSION}"
     fi
 fi
