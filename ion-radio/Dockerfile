@@ -4,12 +4,6 @@ FROM alpine:latest
 # Set a working directory
 WORKDIR /app/
 
-# Copy files
-#COPY app/* ./
-
-# Mod perms
-#RUN chmod +x ./boot.sh
-
 # Update / Upgrade apk
 RUN apk update
 
