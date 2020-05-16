@@ -10,7 +10,7 @@ done
 if [[ ! "$ACTION" ]]; then
   echo "Action must be provided, use the -a flag. Available actions are start, stop, revive, pause, unpause"
   echo "use the -f flag to clean up during a stop operation"
-  exit 2;
+  exit 2
 fi
 
 sh "util/${ACTION}-bot.sh" -v 1
