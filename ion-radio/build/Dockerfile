@@ -11,9 +11,6 @@ RUN apk update
 RUN apk add \
     openjdk11-jre
 
-# Expose port
-EXPOSE 80
-
 # Clean up
 RUN rm /var/cache/apk/*
 
