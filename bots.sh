@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # PARSE ARGS
 while getopts fa: option
 do
