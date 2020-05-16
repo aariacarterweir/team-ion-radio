@@ -17,4 +17,3 @@ sed -i "s/\[OWNER_ID\]/$OWNER_ID/" "bot-${VERSION}/config.txt"
 
 # boot the bot!
 cd "bot-${VERSION}" && nohup java -Dnogui=true -jar /app/music-bot.jar &
-cd ..
