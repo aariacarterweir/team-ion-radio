@@ -20,6 +20,7 @@ sh "util/${ACTION}-bot.sh" -v 2
 sh "util/${ACTION}-bot.sh" -v 3
 sh "util/${ACTION}-bot.sh" -v 4
 sh "util/${ACTION}-bot.sh" -v 5
+sh "util/${ACTION}-bot.sh" -v 6
 
 if [ "$FORCE" ]; then
   docker system prune --force
