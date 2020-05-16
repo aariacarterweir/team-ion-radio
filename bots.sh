@@ -19,6 +19,6 @@ sh "util/${ACTION}-bot.sh" -v 3
 sh "util/${ACTION}-bot.sh" -v 4
 sh "util/${ACTION}-bot.sh" -v 5
 
-if [[ "$FORCE" && "$ACTION"='stop' ]]; then
+if [[ "$FORCE" ]]; then
   docker system prune --force
 fi
