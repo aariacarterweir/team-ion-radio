@@ -9,4 +9,4 @@ do
 done
 
 docker start "ion-radio-${VERSION}"
-docker exec "ion-radio-${VERSION}" ./boot.sh -b
+docker exec -d "ion-radio-${VERSION}" ./boot.sh -b
