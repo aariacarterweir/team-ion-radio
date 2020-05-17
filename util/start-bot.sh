@@ -8,11 +8,5 @@ do
     esac
 done
 
-docker run \
-  --detach \
-  --tty \
-  --env VERSION="$VERSION" \
-  --env-file .env \
-  --name "ion-radio-${VERSION}" \
-  aariacarterweir/ion-radio:latest \
-  boot.sh -b
+docker start "ion-radio-${VERSION}"
+docker exec "ion-radio-${VERSION}" ./boot.sh -b

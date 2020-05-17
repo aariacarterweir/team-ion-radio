@@ -1,8 +1,8 @@
 #ion-radio
 
-Version: 1.1.1
+Version: 1.1.2
 
 Uses https://github.com/jagrosh/MusicBot
 
-- To start, run `sh bots.sh -a start`
+- To boot up, run `sh bots.sh -a boot`
 - For help, run `sh bots.sh`
