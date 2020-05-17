@@ -1,10 +1,11 @@
 #!/bin/sh
 
 # PARSE ARGS
-while getopts fa:v: option
+while getopts pca:v: option
 do
     case "${option}" in
-        f) FORCE='true';;
+        p) PRUNE='true';;
+        c) CLEAN='true';;
         a) ACTION=${OPTARG};;
         v) VERSION=${OPTARG};;
     esac
@@ -25,8 +26,9 @@ if [ ! "$ACTION" ]; then
   echo "    stop - Shuts down the bot containers"
   echo "    start - Starts up the bot containers"
   echo "Other available flags are:"
-  echo "    use the -f flag to run docker system prune --force"
   echo "    use the -v flag to specify a version"
+  echo "    use the -p flag to run docker system prune"
+  echo "    use the -c flag to run docker system prune -a"
   exit 2
 fi
 
@@ -45,6 +47,11 @@ else
 fi
 
 # Check if we should system prune
-if [ "$FORCE" ]; then
+if [ "$PRUNE" ]; then
   docker system prune --force
+fi
+
+# Check if we should system prune EVERYTHING
+if [ "$CLEAN" ]; then
+  docker system prune -a --force
 fi
