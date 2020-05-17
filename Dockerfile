@@ -1,5 +1,5 @@
 # Extend the latest ubuntu image
-FROM azul/zulu-openjdk-alpine:latest
+FROM azul/zulu-openjdk-alpine:11-jre
 
 # Set a working directory
 WORKDIR /app/

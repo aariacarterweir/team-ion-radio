@@ -149,7 +149,7 @@ aliases {
 
   // Admin commands
   prefix = [ setprefix ]
-  setdj = []
+  setdj = [ setmods ]
   settc = []
   setvc = []
 
