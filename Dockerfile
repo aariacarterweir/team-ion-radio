@@ -11,5 +11,10 @@ COPY app/ .
 RUN chmod +x ./boot.sh
 RUN chmod -R 777 /app/
 
+# Get some packages
+RUN apk update
+RUN apk add \
+    nano
+
 # Set entrypoint to "sh"
 ENTRYPOINT ["sh"]
