@@ -8,21 +8,24 @@ do
     esac
 done
 
+# Copy config file
+cp config.txt persist/config.txt
+
 # Set token
 eval TOKEN=\$BOT_TOKEN_${VERSION}
 
 # add bot token
-sed -i "s/\[BOT_TOKEN\]/$TOKEN/" config.txt
+sed -i "s/\[BOT_TOKEN\]/$TOKEN/" persist/config.txt
 
 # update owner id
-sed -i "s/\[OWNER_ID\]/$OWNER_ID/" config.txt
+sed -i "s/\[OWNER_ID\]/$OWNER_ID/" persist/config.txt
 
 # update prefix
-sed -i "s/\[PREFIX\]/\-${VERSION}/" config.txt
+sed -i "s/\[PREFIX\]/\-${VERSION}/" persist/config.txt
 
 # run the bot!
 if [ "$BOOT" ]; then
-  nohup java -Dnogui=true -jar /app/music-bot.jar &
+  cd persist && nohup java -Dnogui=true -jar /app/music-bot.jar &
 fi
 
 # keep alive
