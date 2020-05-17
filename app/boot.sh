@@ -9,6 +9,7 @@ do
 done
 
 # Copy config file
+rm -f persist/config.txt
 cp config.txt persist/config.txt
 
 # Set token
