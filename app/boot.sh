@@ -8,9 +8,8 @@ do
     esac
 done
 
-# Copy config file
-rm -f persist/config.txt
-cp config.txt persist/config.txt
+# Set up persistance
+sh persist.sh
 
 # Set token
 eval TOKEN=\$BOT_TOKEN_${VERSION}

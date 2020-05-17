@@ -11,9 +11,9 @@ do
 done
 
 # ensure global persist directory exists
-if [ ! -d "persist" ]; then
-  mkdir persist
-  chmod -R 777 persist
+if [ ! -d ".persist" ]; then
+  mkdir .persist
+  chmod -R 755 .persist
 fi
 
 # Check for valid action flag
