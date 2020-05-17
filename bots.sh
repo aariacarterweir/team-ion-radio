@@ -18,6 +18,7 @@ if [ ! "$ACTION" ]; then
   echo "    stop - Shuts down the bot containers"
   echo "    start - Starts up the bot containers"
   echo "use the -f flag to run docker system prune --force"
+  echo "use the -v flag to specify a version"
   exit 2
 fi
 
