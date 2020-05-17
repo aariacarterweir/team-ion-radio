@@ -12,9 +12,9 @@ done
 
 if [ ! "$ACTION" ]; then
   echo "Action must be provided, use the -a flag. Available actions are:"
-  echo "    boot - Starts the bots up from scratch if there is no pre-existing container"
-  echo "    suspend - Pauses the bots"
-  echo "    resume - Resumes paused bots"
+  echo "    run - Starts the bots up from scratch if there is no pre-existing container"
+  echo "    pause - Pauses the bots"
+  echo "    unpause - Resumes paused bots"
   echo "    stop - Shuts down the bot containers"
   echo "    start - Starts up the bot containers"
   echo "use the -f flag to run docker system prune --force"
