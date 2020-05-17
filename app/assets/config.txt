@@ -52,7 +52,7 @@ status = INVISIBLE
 // "Playing" status. Note that this will ONLY work if the bot is playing music on ONE guild;
 // if the bot is playing on multiple guilds, this will not work.
 
-songinstatus=true
+songinstatus=false
 
 
 // If you set this, the bot will also use this prefix in addition to
