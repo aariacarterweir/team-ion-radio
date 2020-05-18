@@ -41,6 +41,7 @@ if [ ! "$VERSION" ]; then
   sh "util/${ACTION}-bot.sh" -v 4
   sh "util/${ACTION}-bot.sh" -v 5
   sh "util/${ACTION}-bot.sh" -v 6
+  sh "util/${ACTION}-bot.sh" -v 7
 else
   echo "Running action '${ACTION}' for bot version '${VERSION}'"
   sh "util/${ACTION}-bot.sh" -v "$VERSION"
