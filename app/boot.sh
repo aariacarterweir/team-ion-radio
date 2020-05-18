@@ -21,7 +21,7 @@ sed -i "s/\[BOT_TOKEN\]/$TOKEN/" persist/config.txt
 sed -i "s/\[OWNER_ID\]/$OWNER_ID/" persist/config.txt
 
 # update prefix
-sed -i "s/\[PREFIX\]/\-${VERSION}/" persist/config.txt
+sed -i "s/\[PREFIX\]/${VERSION}/" persist/config.txt
 
 # run the bot!
 if [ "$BOOT" ]; then

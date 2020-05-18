@@ -35,13 +35,13 @@ fi
 # Run for either all versions or a specific version
 if [ ! "$VERSION" ]; then
   echo "Running action '${ACTION}' for all bots"
-  sh "util/${ACTION}-bot.sh" -v 1
-  sh "util/${ACTION}-bot.sh" -v 2
-  sh "util/${ACTION}-bot.sh" -v 3
-  sh "util/${ACTION}-bot.sh" -v 4
-  sh "util/${ACTION}-bot.sh" -v 5
-  sh "util/${ACTION}-bot.sh" -v 6
-  sh "util/${ACTION}-bot.sh" -v 7
+  sh "util/${ACTION}-bot.sh" -v d4t
+  sh "util/${ACTION}-bot.sh" -v n30
+  sh "util/${ACTION}-bot.sh" -v m4l
+  sh "util/${ACTION}-bot.sh" -v b3p
+  sh "util/${ACTION}-bot.sh" -v s3d
+  sh "util/${ACTION}-bot.sh" -v c4p
+  sh "util/${ACTION}-bot.sh" -v j4k
 else
   echo "Running action '${ACTION}' for bot version '${VERSION}'"
   sh "util/${ACTION}-bot.sh" -v "$VERSION"
