@@ -36,7 +36,7 @@ fi
 if [ ! "$VERSION" ]; then
   echo "Running action '${ACTION}' for all bots"
   sh "util/${ACTION}-bot.sh" -v d4t
-  sh "util/${ACTION}-bot.sh" -v n3o
+  sh "util/${ACTION}-bot.sh" -v n3l
   sh "util/${ACTION}-bot.sh" -v m4l
   sh "util/${ACTION}-bot.sh" -v b3p
   sh "util/${ACTION}-bot.sh" -v s3d
