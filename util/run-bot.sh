@@ -19,6 +19,7 @@ docker run \
   --detach \
   --tty \
   --mount  type=bind,source="$(pwd)/persist/${VERSION}",target=/app/persist \
+  --mount  type=bind,source="$(pwd)/Playlists",target=/app/Playlists \
   --env VERSION="$VERSION" \
   --env-file .env \
   --name "ion-radio-${VERSION}" \
