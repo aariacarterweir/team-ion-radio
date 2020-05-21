@@ -1,4 +1,4 @@
-# Extend openjdk alpine image
+# Extend the latest ubuntu image
 FROM azul/zulu-openjdk-alpine:11-jre
 
 # Set a working directory
@@ -13,6 +13,3 @@ RUN chmod -R 755 /app/
 
 # Set entrypoint to "sh"
 ENTRYPOINT ["sh"]
-
-# Keep alive
-CMD tail -f /dev/null
