@@ -27,6 +27,3 @@ sed -i "s/\[PREFIX\]/${VERSION}/" persist/config.txt
 if [ "$BOOT" ]; then
   cd persist && nohup java -Dnogui=true -jar /app/music-bot.jar &
 fi
-
-# keep alive
-trap : TERM INT; sleep infinity & wait
