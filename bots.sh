@@ -1,13 +1,5 @@
 #!/bin/sh
 
-# Load default config
-. config.txt
-
-# Load custom config if available
-if [ -f ".env" ]; then
-  . .env
-fi
-
 # PARSE ARGS
 while getopts pca:v: option
 do

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# LOAD CONFIG
+. load-config.sh
+
 # PARSE ARGS
 while getopts v: option
 do
