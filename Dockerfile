@@ -1,10 +1,6 @@
 # Extend the latest ubuntu image
 FROM azul/zulu-openjdk-alpine:11-jre
 
-# Get packages
-RUN apk update
-RUN apk add zsh
-
 # Set a working directory
 WORKDIR /app/
 

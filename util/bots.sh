@@ -31,7 +31,6 @@ fi
 # Run for either all versions or a specific version
 if [ ! "$VERSION" ]; then
   echo "Running action '${ACTION}' for all bots"
-  setopt shwordsplit
   for v in $BOTS; do
     sh "util/bot-${ACTION}.sh" -v "$v"
   done
