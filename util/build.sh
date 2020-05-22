@@ -1,15 +1,16 @@
-#!/bin/zsh
+#!/bin/sh
 
-# EXAMPLE USAGE
-# ./build.sh -v 1.0.11 -p
-
-# LOAD CONFIG
+# Load config
 . util/load-config.sh
 
+# EXAMPLE USAGE
+# sh build.sh -v 1.0.11 -p
+
 # PARSE ARGS
-VERSION="$1"
-while getopts p option; do
+while getopts pv: option
+do
     case "${option}" in
+        v) VERSION=${OPTARG};;
         p) PUSH='true';;
     esac
 done
@@ -29,6 +30,3 @@ if [ "$PUSH" ]; then
         docker push "${IMAGE_NAME}:${VERSION}"
     fi
 fi
-
-# CLEAN UP
-docker system prune --force

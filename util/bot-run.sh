@@ -25,4 +25,5 @@ docker run \
   --env PERSIST_DIR="$PERSIST_DIR" \
   --env-file .env \
   --name "${CONTAINER_PREFIX}${VERSION}" \
-  "$IMAGE_NAME:$LATEST_TAG"
+  "$IMAGE_NAME:$LATEST_TAG" \
+  boot

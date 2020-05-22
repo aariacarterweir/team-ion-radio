@@ -1,12 +1,7 @@
 #!/bin/sh
 
-# PARSE ARGS
-while getopts b option
-do
-    case "${option}" in
-        b) BOOT='true';;
-    esac
-done
+# Args
+BOOT="$1"
 
 # Set token
 eval TOKEN=\$BOT_TOKEN_${VERSION}
