@@ -39,7 +39,7 @@ sed -i "s/\[PREFIX\]/${VERSION}/" "$CONFIG_FILE"
 
 # run the bot!
 if [ "$BOOT" ]; then
-  cd persist && nohup java -Dnogui=true -jar /app/music-bot.jar &
+  cd "shared/$PERSIST_DIR" && nohup java -Dnogui=true -jar /app/music-bot.jar &
 fi
 
 # keep alive
