@@ -16,6 +16,7 @@ if [ ! "$ACTION" ]; then
   echo "Action must be provided, use the -a flag. Available actions are:"
   echo "    run - Starts the bots up"
   echo "    stop - Shuts down the bot containers and removes them"
+  echo "    exec - Opens interactive shell in a container. Version must be supplied"
   echo "Other available flags are:"
   echo "    use the -v flag to specify a version"
   exit 2
