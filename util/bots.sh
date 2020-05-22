@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Load config
 . util/load-config.sh
