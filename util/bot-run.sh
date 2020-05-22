@@ -4,12 +4,7 @@
 . util/load-config.sh
 
 # PARSE ARGS
-while getopts v: option
-do
-    case "${option}" in
-        v) VERSION=${OPTARG};;
-    esac
-done
+VERSION="$1"
 
 # create persist directory if it does not exist
 PERSIST_DIR_LOCAL_PATH="shared/vol-${VERSION}/${PERSIST_DIR}"
@@ -30,5 +25,4 @@ docker run \
   --env PERSIST_DIR="$PERSIST_DIR" \
   --env-file .env \
   --name "${CONTAINER_PREFIX}${VERSION}" \
-  "$IMAGE_NAME:$LATEST_TAG" \
-  -b
+  "$IMAGE_NAME:$LATEST_TAG"

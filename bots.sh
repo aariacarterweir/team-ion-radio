@@ -4,13 +4,8 @@
 . util/load-config.sh
 
 # PARSE ARGS
-while getopts a:v: option
-do
-    case "${option}" in
-        a) ACTION=${OPTARG};;
-        v) VERSION=${OPTARG};;
-    esac
-done
+ACTION="$1"
+VERSION="$2"
 
 # Check for valid action flag
 if [ ! "$ACTION" ]; then
@@ -31,10 +26,11 @@ fi
 # Run for either all versions or a specific version
 if [ ! "$VERSION" ]; then
   echo "Running action '${ACTION}' for all bots"
+  setopt shwordsplit
   for v in $BOTS; do
-    sh "util/bot-${ACTION}.sh" -v "$v"
+    zsh "util/bot-${ACTION}.sh" "$v"
   done
 else
   echo "Running action '${ACTION}' for bot version '${VERSION}'"
-  sh "util/bot-${ACTION}.sh" -v "$VERSION"
+  zsh "util/bot-${ACTION}.sh" "$VERSION"
 fi

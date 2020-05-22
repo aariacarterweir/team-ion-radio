@@ -4,12 +4,7 @@
 . util/load-config.sh
 
 # PARSE ARGS
-while getopts v: option
-do
-    case "${option}" in
-        v) VERSION=${OPTARG};;
-    esac
-done
+VERSION="$1"
 
 echo "Stopping container:"
 docker container stop "${CONTAINER_PREFIX}${VERSION}"

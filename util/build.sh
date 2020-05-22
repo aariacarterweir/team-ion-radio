@@ -1,16 +1,15 @@
 #!/bin/zsh
 
 # EXAMPLE USAGE
-# sh build.sh -v 1.0.11 -p
+# ./build.sh -v 1.0.11 -p
 
 # LOAD CONFIG
 . util/load-config.sh
 
 # PARSE ARGS
-while getopts pv: option
-do
+VERSION="$1"
+while getopts p option; do
     case "${option}" in
-        v) VERSION=${OPTARG};;
         p) PUSH='true';;
     esac
 done
