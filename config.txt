@@ -3,4 +3,4 @@ IMAGE_NAME=aariacarterweir/ion-radio
 LATEST_TAG=latest
 CONTAINER_PREFIX=ion-radio-
 PERSIST_DIR=workspace
-BOTS=(d4t n3l m4l b3p s3d c4p j4k r1t t3p)
+BOTS="d4t n3l m4l b3p s3d c4p j4k r1t t3p"
