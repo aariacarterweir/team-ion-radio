@@ -8,4 +8,4 @@ do
     esac
 done
 
-sh bots.sh -a stop -v "$VERSION"
+sh util/bots.sh -a stop -v "$VERSION"

@@ -8,4 +8,4 @@ do
     esac
 done
 
-sh bots.sh -a exec -v "$VERSION"
+sh util/bots.sh -a exec -v "$VERSION"
