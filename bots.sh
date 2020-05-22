@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Load default config
-. config.txt
+. ./config.txt
 
 # Load custom config if available
-if [ -f ".env" ]; then
-  . .env
+if [ -f "./.env" ]; then
+  . ./.env
 fi
 
 # PARSE ARGS
