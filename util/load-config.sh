@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Load default config
 . ./config.txt

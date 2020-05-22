@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # LOAD CONFIG
 . util/load-config.sh
@@ -31,4 +31,4 @@ docker run \
   --env-file .env \
   --name "${CONTAINER_PREFIX}${VERSION}" \
   "$IMAGE_NAME:$LATEST_TAG" \
-  boot.sh -b
+  -b
