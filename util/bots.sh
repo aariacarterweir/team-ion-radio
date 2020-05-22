@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Load config
+. util/load-config.sh
+
 # PARSE ARGS
 while getopts a:v: option
 do
@@ -8,7 +11,6 @@ do
         v) VERSION=${OPTARG};;
     esac
 done
-
 
 # Check for valid action flag
 if [ ! "$ACTION" ]; then
@@ -29,16 +31,10 @@ fi
 # Run for either all versions or a specific version
 if [ ! "$VERSION" ]; then
   echo "Running action '${ACTION}' for all bots"
-  sh "util/bot-${ACTION}.sh" -v d4t
-  sh "util/bot-${ACTION}.sh" -v n3l
-  sh "util/bot-${ACTION}.sh" -v m4l
-  sh "util/bot-${ACTION}.sh" -v b3p
-  sh "util/bot-${ACTION}.sh" -v s3d
-  sh "util/bot-${ACTION}.sh" -v c4p
-  sh "util/bot-${ACTION}.sh" -v j4k
-  sh "util/bot-${ACTION}.sh" -v r1t
-  sh "util/bot-${ACTION}.sh" -v t3p
+  for v in "${BOTS[@]}"; do
+    sh "util/bot-${ACTION}.sh" -v "$v"
+  done
 else
   echo "Running action '${ACTION}' for bot version '${VERSION}'"
-  . "util/bot-${ACTION}.sh" -v "$VERSION"
+  sh "util/bot-${ACTION}.sh" -v "$VERSION"
 fi

@@ -29,7 +29,7 @@ owner = [OWNER_ID]
 // If you do not set this, the prefix will be a mention of the bot (@Botname play)
 // If you make this blank, the bot will not use a prefix
 
-prefix = "-all-bots"
+prefix = "-ion-radio"
 
 
 // If you set this, it modifies the default game of the bot
