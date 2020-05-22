@@ -11,5 +11,5 @@ COPY app/ .
 RUN chmod +x ./boot.sh
 RUN chmod -R 755 /app/
 
-# Set entrypoint to "sh"
-ENTRYPOINT ["sh"]
+# Set entry point
+ENTRYPOINT ["./boot.sh"]

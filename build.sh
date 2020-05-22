@@ -3,9 +3,8 @@
 # EXAMPLE USAGE
 # sh build.sh -v 1.0.11 -p
 
-# CONFIG
-IMAGE_NAME="aariacarterweir/ion-radio"
-LATEST_TAG="latest"
+# LOAD CONFIG
+. util/load-config.sh
 
 # PARSE ARGS
 while getopts pv: option

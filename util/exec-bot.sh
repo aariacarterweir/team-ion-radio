@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# LOAD CONFIG
+. util/load-config.sh
+
 # PARSE ARGS
 while getopts v: option
 do
@@ -8,5 +11,5 @@ do
     esac
 done
 
-docker start "ion-radio-${VERSION}"
-docker exec -d "ion-radio-${VERSION}" ./boot.sh -b
+# sh into container
+docker exec -it "${CONTAINER_PREFIX}${VERSION}" sh

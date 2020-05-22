@@ -1,3 +1,6 @@
+# LOAD CONFIG
+. util/load-config.sh
+
 # PARSE ARGS
 while getopts v: option
 do
@@ -6,4 +9,7 @@ do
     esac
 done
 
-docker container stop "ion-radio-${VERSION}"
+echo "Stopping container:"
+docker container stop "${CONTAINER_PREFIX}${VERSION}"
+echo "Removing container:"
+docker rm "${CONTAINER_PREFIX}${VERSION}"
