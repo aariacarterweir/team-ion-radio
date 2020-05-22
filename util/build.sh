@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # EXAMPLE USAGE
 # sh build.sh -v 1.0.11 -p

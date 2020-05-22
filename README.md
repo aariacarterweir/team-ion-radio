@@ -1,6 +1,6 @@
 #ion-radio
 
-Version: 1.7.0
+Version: 1.8.0
 
 Uses https://github.com/jagrosh/MusicBot
 

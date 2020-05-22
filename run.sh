@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # PARSE ARGS
 while getopts v: option
