@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # LOAD CONFIG
 . util/load-config.sh
 
