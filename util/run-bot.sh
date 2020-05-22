@@ -31,4 +31,4 @@ docker run \
   --env-file .env \
   --name "${CONTAINER_PREFIX}${VERSION}" \
   "$IMAGE_NAME:$LATEST_TAG" \
-  -b
+  boot.sh -b

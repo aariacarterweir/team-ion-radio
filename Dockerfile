@@ -12,4 +12,4 @@ RUN chmod +x ./boot.sh
 RUN chmod -R 755 /app/
 
 # Set entry point
-ENTRYPOINT ["./boot.sh"]
+ENTRYPOINT ["sh"]
