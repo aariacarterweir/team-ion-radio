@@ -1,15 +1,14 @@
 #!/bin/sh
 
 # PARSE ARGS
-while getopts pca:v: option
+while getopts a:v: option
 do
     case "${option}" in
-        p) PRUNE='true';;
-        c) CLEAN='true';;
         a) ACTION=${OPTARG};;
         v) VERSION=${OPTARG};;
     esac
 done
+
 
 # Check for valid action flag
 if [ ! "$ACTION" ]; then
