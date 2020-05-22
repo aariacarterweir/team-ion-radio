@@ -1,4 +1,3 @@
-#!/bin/zsh
 IMAGE_NAME=aariacarterweir/ion-radio
 LATEST_TAG=latest
 CONTAINER_PREFIX=ion-radio-
