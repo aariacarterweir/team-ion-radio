@@ -52,7 +52,7 @@ status = INVISIBLE
 // "Playing" status. Note that this will ONLY work if the bot is playing music on ONE guild;
 // if the bot is playing on multiple guilds, this will not work.
 
-songinstatus=false
+songinstatus=true
 
 
 // If you set this, the bot will also use this prefix in addition to
@@ -138,7 +138,7 @@ aliases {
   // Music commands
   lyrics = []
   nowplaying = [ np, current ]
-  play = []
+  play = [ p ]
   playlists = [ pls ]
   queue = [ list ]
   remove = [ delete ]
@@ -155,10 +155,10 @@ aliases {
 
   // DJ Commands
   forceremove = [ forcedelete, modremove, moddelete ]
-  forceskip = [ modskip ]
+  forceskip = [ modskip, fskip ]
   movetrack = [ move ]
-  pause = []
-  playnext = []
+  pause = [ pp ]
+  playnext = [ pn ]
   repeat = []
   skipto = [ jumpto ]
   stop = []

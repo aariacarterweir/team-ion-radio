@@ -14,7 +14,7 @@ chmod -R 755 shared
 
 # Copy config file
 rm -f "$CONFIG_FILE"
-cp default-config.txt "$CONFIG_FILE"
+cp default-bot-config.txt "$CONFIG_FILE"
 
 # Copy playlists
 rm -rf "shared/$PERSIST_DIR/Playlists"
