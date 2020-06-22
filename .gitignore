@@ -2,5 +2,13 @@
 .DS_Store
 .env
 shared/*
-!shared/Playlists/
-!shared/Playlists/*
+!shared/Playlists/420.txt
+!shared/Playlists/Bio Lab 9.txt
+!shared/Playlists/Bridge.txt
+!shared/Playlists/Conference Room 1.txt
+!shared/Playlists/Conference Room 2.txt
+!shared/Playlists/Engineering.txt
+!shared/Playlists/Holodeck.txt
+!shared/Playlists/Ion Radio.txt
+!shared/Playlists/Pump it up.txt
+!shared/Playlists/Ten Forward.txt
