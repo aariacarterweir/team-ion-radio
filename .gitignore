@@ -1,5 +1,6 @@
-.idea/
+.idea
 .DS_Store
+node_modules
 .env
 shared/*
 !shared/Playlists/420.txt

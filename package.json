@@ -1,0 +1,7 @@
+{
+  "version": "1.11.1",
+  "license": "MIT",
+  "dependencies": {
+    "dockerfile-build-tools": "^0.0.2"
+  }
+}
