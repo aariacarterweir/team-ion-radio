@@ -1,7 +1,9 @@
 {
+  "name": "ion-radio",
+  "docker-username": "aariacarterweir",
   "version": "1.11.1",
   "license": "MIT",
   "dependencies": {
-    "dockerfile-build-tools": "^0.0.2"
+    "dockerfile-build-tools": "^0.0.6"
   }
 }
